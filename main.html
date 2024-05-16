@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maps Demo | Registro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="title">Registrarse</h1>
+
+    <form id="form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DKj000000BiQ0" onsubmit="return onSubmit()" method="POST">
+
+      <input type=hidden name="oid" value="00DKj000000BiQ0">
+      <input type=hidden name="retURL" value="http://google.com">
+      <input id="lead_source" name="lead_source" type="hidden" value="Website" />
+
+      <div class="form-row">
+        <div>
+          <label for="first_name">Nombre</label>
+          <input class="field" id="first_name" minlength="3" maxlength="40" name="first_name" size="20" type="text" />
+        </div>
+        <div>
+          <label for="last_name"><span>*</span>Apellido</label>
+          <input required class="field" id="last_name" minlength="3" maxlength="40" name="last_name" size="20" type="text" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div>
+          <label for="email"><span>*</span>Email</label>
+          <input required class="field" id="email" name="email" size="20" type="text" />
+        </div>
+        <div>
+          <label for="phone">Telefono</label>
+          <input id="phone" class="field" name="phone" size="20" type="text" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div>
+          <label for="company">Compañia</label>
+          <input id="company" class="field" maxlength="80" name="company" size="20" type="text" />
+        </div>
+        <div>
+          <label for="city">Ciudad</label>
+          <input id="city" class="field" maxlength="80" name="city" size="20" type="text" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div>
+          <label for="state">Estado/Provincia</label>
+          <input id="state" class="field" maxlength="80" name="state" size="20" type="text" />
+        </div>
+      </div>
+
+      <input class="btn btn-submit" type="submit" onclick="openPopup()" name="submit">
+    </form>
+
+    <!-- <div class="popup" id="popup">
+      <h2>Gracias!</h2>
+      <p>Sus datos fueron exitosamente registrados</p>
+      <button class="btn btn-back" type="button" onclick="closePopup()">OK</button>
+    </div> -->
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
