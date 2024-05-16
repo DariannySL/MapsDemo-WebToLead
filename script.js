@@ -1,13 +1,6 @@
-// let popup = document.getElementById('popup')
-
 function onSubmit() {
-  // popup.classList.add('open-popup')
+  
 }
-
-// function closePopup(){
-//   document.getElementById("form").reset();
-//   popup.classList.remove('open-popup')
-// }
 
 // Event listener for form validation
 document.addEventListener('DOMContentLoaded', () => {
