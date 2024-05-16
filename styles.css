@@ -95,8 +95,12 @@ body {
 
 .popup .btn-back {
   background-color: lightblue;
-  color: #fff;
   box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+
+.btn-back a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .popup .btn-back:hover {
